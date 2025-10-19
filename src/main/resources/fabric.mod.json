@@ -1,0 +1,45 @@
+{
+    "schemaVersion": 1,
+    "id": "batch-fakeplayers",
+    "version": "${version}",
+    "name": "Batch Fakeplayers",
+    "description": "This is an example description! Tell everyone what your mod is about!",
+    "authors": [
+        "DarlingATRI"
+    ],
+    "contact": {
+        "homepage": "https://github.com/DarlingATRI433/BatchFakePlayers",
+        "sources": "https://github.com/DarlingATRI433/BatchFakePlayers"
+    },
+    "license": "MIT License",
+    "icon": "assets/batch-fakeplayers/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.xiaxin.batchfakeplayers.BatchFakeplayers"
+        ],
+        "client": [
+            "com.xiaxin.batchfakeplayers.BatchFakeplayersClient"
+        ],
+        "fabric-datagen": [
+            "com.xiaxin.batchfakeplayers.BatchFakeplayersDataGenerator"
+        ]
+    },
+    "mixins": [
+        "batch-fakeplayers.mixins.json",
+        {
+            "config": "batch-fakeplayers.client.mixins.json",
+            "environment": "client"
+        }
+    ],
+    "depends": {
+        "fabricloader": ">=0.16.14",
+        "minecraft": "~1.21.1",
+        "java": ">=21",
+        "fabric-api": "*",
+        "carpet": "*"
+    },
+    "suggests": {
+        "another-mod": "*"
+    }
+}

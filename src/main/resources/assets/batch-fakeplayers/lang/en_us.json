@@ -1,0 +1,10 @@
+{
+  "command.batchfakeplayers.spawning.start": "Starting to spawn %d fake players...",
+  "command.batchfakeplayers.spawning.start.coords": "Starting to spawn %d fake players%s...",
+  "command.batchfakeplayers.spawning.in_progress": "Fake player spawning is already in progress, please wait",
+  "command.batchfakeplayers.spawning.complete": "Successfully spawned %d fake players",
+  "command.batchfakeplayers.spawning.complete.coords": "Successfully spawned %d fake players%s",
+  "command.batchfakeplayers.spawning.stopped": "Fake player spawning stopped",
+  "command.batchfakeplayers.spawning.not_running": "No fake player spawning task is currently running",
+  "command.batchfakeplayers.spawning.error": "An error occurred while spawning fake players"
+}

@@ -1,0 +1,10 @@
+{
+  "command.batchfakeplayers.spawning.start": "开始生成 %d 个假玩家...",
+  "command.batchfakeplayers.spawning.start.coords": "开始生成 %d 个假玩家%s...",
+  "command.batchfakeplayers.spawning.in_progress": "假玩家生成正在进行中，请等待完成",
+  "command.batchfakeplayers.spawning.complete": "成功生成 %d 个假玩家",
+  "command.batchfakeplayers.spawning.complete.coords": "成功生成 %d 个假玩家%s",
+  "command.batchfakeplayers.spawning.stopped": "假玩家生成已停止",
+  "command.batchfakeplayers.spawning.not_running": "当前没有正在进行的假玩家生成任务",
+  "command.batchfakeplayers.spawning.error": "生成假玩家时发生错误"
+}
