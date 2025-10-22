@@ -2,9 +2,7 @@ package com.xiaxin.batchfakeplayers.manager;
 
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.arguments.IntegerArgumentType;
-import com.mojang.brigadier.arguments.StringArgumentType;
 import com.mojang.brigadier.context.CommandContext;
-import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.xiaxin.batchfakeplayers.BatchFakeplayers;
 import net.minecraft.command.argument.Vec3ArgumentType;
 import net.minecraft.server.command.CommandManager;
@@ -32,7 +30,7 @@ public class FakePlayerManager {
     public void registerCommands(CommandDispatcher<ServerCommandSource> dispatcher) {
         dispatcher.register(CommandManager.literal("fakeplayer")
                 .then(CommandManager.literal("spawn")
-                        .then(CommandManager.argument("count", IntegerArgumentType.integer(1, 100))
+                        .then(CommandManager.argument("count", IntegerArgumentType.integer(1, 200))
                                 .then(CommandManager.literal("at")
                                         .then(CommandManager.argument("pos", Vec3ArgumentType.vec3())
                                                 .executes(this::spawnFakePlayersWithCoords)))
